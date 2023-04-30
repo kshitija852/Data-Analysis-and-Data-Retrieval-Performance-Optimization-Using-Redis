@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+   <body>
+   
+      <div id='bg'>
+         <div id='newrecord' >
+      <header> <h1>Kshitija Shete </h1> 
+         <h1>1001821653 </h1> 
+         <br>
+         <a href="/"> Go to the home page!! </a>
+         <p>Execution Time Taken is: <b>{{timee}}</b></p>
+         <p>Earthquakes having the given magnitude are: <b>{{count[0]}}</b></p>
+          </header>
+  </div>
+   <br> <br>
+   </header>
+      <br> <br>
+      <table id='customers'>
+         <tr>
+            <th><b>Time</b></th>
+            <th><b>latitude</b></th>
+            <th><b>longitude</b></th>
+            <th><b>mag</b></th>
+            <th><b>Place</b></th>
+     
+         </tr>
+         {% for col in rows %}
+         <tr>
+            <td>{{col[0]}}</td>
+            <td>{{col[1]}}</td>
+            <td> {{col[2]}}</td>
+            <td>{{col[4]}}</td>
+            <td> {{col[13]}}</td>
+         </tr>
+         {% endfor %}
+      </table>
+
+      <br>
+     
+   </body>
+</html>
